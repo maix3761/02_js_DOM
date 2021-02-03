@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<style>
+    img {
+        width: 100%;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    .article {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .article1,
+    .article2 {
+        border: 1px solid #333;
+        margin-bottom: 15px;
+        padding: 2rem;
+
+    }
+
+</style>
+
+<body>
+    <header>
+        <h1>Titel</h1>
+    </header>
+
+    <main>
+        <h2>Undertitel</h2>
+        <section class=article>
+            <section class=article1>
+                <article>
+                    <img src="billeder/placeimg_400_300_nature.jpg" alt="" class="natur">
+                    <h3>Article 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus hic eum nam labore quibusdam, amet beatae reiciendis in perspiciatis. Aut modi omnis quaerat officia, sunt facilis corrupti culpa praesentium alias.</p>
+                </article>
+
+            </section>
+            <section class=article2>
+                <article>
+                    <img src="billeder/placeimg_400_300_people.jpg" alt="" class="mennesker">
+                    <h3>Article 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus hic eum nam labore quibusdam, amet beatae reiciendis in perspiciatis. Aut modi omnis quaerat officia, sunt facilis corrupti culpa praesentium alias.</p>
+                </article>
+
+            </section>
+        </section>
+
+    </main>
+
+
+    <footer>This is the footer</footer>
+</body>
+
+</html>

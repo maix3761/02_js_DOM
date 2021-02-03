@@ -5,8 +5,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="style.css">
+    <!--    <link rel="stylesheet" href="style.css">-->
 </head>
+<style>
+    img {
+        width: 100%;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    .article {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .article1,
+    .article2 {
+        border: 1px solid #333;
+        margin-bottom: 15px;
+        padding: 2rem;
+
+    }
+
+</style>
+
+
 
 <body>
     <header>
@@ -32,7 +59,7 @@
     <script>
         const titel = document.querySelector("header");
         console.log(titel);
-//        titel.textContent = "Billedgaleri";
+        //        titel.textContent = "Billedgaleri";
         titel.textContent = "<h1>Billeder</h1>";
 
     </script>

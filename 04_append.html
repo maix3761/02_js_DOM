@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<style>
+    img {
+        width: 100%;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    .article {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .article1,
+    .article2 {
+        border: 1px solid #333;
+        margin-bottom: 15px;
+        padding: 2rem;
+
+    }
+
+</style>
+
+<body>
+    <header>
+        <h1>Titel</h1>
+    </header>
+
+    <main>
+        <h2>Undertitel</h2>
+        <section class=article>
+            <section class=article1>
+                <article>
+                    <img src="billeder/placeimg_400_300_people.jpg" alt="" class="natur">
+                    <h3>Article 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus hic eum nam labore quibusdam, amet beatae reiciendis in perspiciatis. Aut modi omnis quaerat officia, sunt facilis corrupti culpa praesentium alias.</p>
+                </article>
+
+            </section>
+            <section class=article2>
+                <article>
+                    <img src="billeder/placeimg_400_300_nature.jpg" alt="" class="mennesker">
+                    <h3>Article 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus hic eum nam labore quibusdam, amet beatae reiciendis in perspiciatis. Aut modi omnis quaerat officia, sunt facilis corrupti culpa praesentium alias.</p>
+                </article>
+
+            </section>
+        </section>
+
+    </main>
+
+
+    <footer>This is the footer</footer>
+
+    <script>
+        //    Udskift titel
+        const overskrift = document.querySelector("h1");
+        const article1 = document.querySelector("article:nth-child(1) p");
+        const article2 = document.querySelector("article:nth-child(2) p");
+        const articleOverskrift1 = document.querySelector("article:nth-child(1) h3");
+        const articleOverskrift2 = document.querySelector("article:nth-child(2) h3");
+        overskrift.textContent;
+        console.log(overskrift.textContent);
+        overskrift.textContent = "Billeder";
+        console.log(overskrift.textContent);
+        article1.innerHTML = "Her er et <b>billede</b> af noget arkitektur";
+        article2.textContent = "Her er også et billede af noget arkitektur";
+        articleOverskrift1.innerHTML = "<i>Arkitetur</i>";
+        articleOverskrift2.textContent = "Arkitetur";
+
+        //        Udskift billede
+        const billede1 = document.querySelector("article:nth-child(1) img");
+        console.log(billede1);
+
+        billede1.src = "billeder/placeimg_400_300_people.jpg";
+        billede1.alt = "mennesker";
+
+        const billede2 = document.querySelector("article:nth-child(1) img");
+        console.log(billede2);
+
+        billede1.src = "billeder/placeimg_400_300_people.jpg";
+
+        //       tilføj ny article
+
+
+
+        let mainSection = document.querySelector("section");
+        // Jeg har lavet et article-tag
+        let newArticle = document.createElement("article");
+        // Jeg har lavet en overskrift
+        let overskrift = document.createElement("h3");
+        // Jeg har lavet noget text til overskriften
+        let overskriftText = document.createTextNode("Ny artikel");
+        // Jeg tilføjer teksten til den oversskrift jeg har lavet
+        overskrift.appendChild(overskriftText);
+        // Jeg tilføjer overskriften til mit article
+        newArticle.appendChild(overskrift);
+        // Til sidst indsætter jeg ddet
+        mainSection.appendChild(newArticle);
+
+    </script>
+</body>
+
+</html>

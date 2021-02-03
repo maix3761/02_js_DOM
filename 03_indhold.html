@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<style>
+    img {
+        width: 100%;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    .article {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .article1,
+    .article2 {
+        border: 1px solid #333;
+        margin-bottom: 15px;
+        padding: 2rem;
+
+    }
+
+</style>
+
+<body>
+    <header>
+        <h1>Titel</h1>
+    </header>
+
+    <main>
+        <h2>Undertitel</h2>
+        <section class=article>
+            <section class=article1>
+                <article>
+                    <img src="billeder/placeimg_400_300_people.jpg" alt="" class="natur">
+                    <h3>Article 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus hic eum nam labore quibusdam, amet beatae reiciendis in perspiciatis. Aut modi omnis quaerat officia, sunt facilis corrupti culpa praesentium alias.</p>
+                </article>
+
+            </section>
+            <section class=article2>
+                <article>
+                    <img src="billeder/placeimg_400_300_nature.jpg" alt="" class="mennesker">
+                    <h3>Article 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus hic eum nam labore quibusdam, amet beatae reiciendis in perspiciatis. Aut modi omnis quaerat officia, sunt facilis corrupti culpa praesentium alias.</p>
+                </article>
+
+            </section>
+        </section>
+
+    </main>
+
+
+    <footer>This is the footer</footer>
+
+    <script>
+        const overskrift = document.querySelector("h1");
+        overskrift.textContent
+        console.log(overskrift.textContent);
+
+        const undertitel = document.querySelector("h2");
+        undertitel.textContent
+        console.log(undertitel.textContent);
+
+        const article = document.querySelector("h3");
+        article.textContent
+        console.log(article.textContent);
+
+        const tekst = document.querySelector("p");
+        tekst.textContent
+        console.log(tekst.textContent);
+
+
+        const article1 = document.querySelector("article:nth-child(1) p");
+        const article2 = document.querySelector("article:nth-child(2) p");
+
+        article1.innerHTML = "Her er et <b>billede<b> af noget tilfældigt";
+        article2.innerHTML = "Her er et <b>billede<b> af noget tilfældigt";
+
+        const articleOverskrift1 = document.querySelector("article:nth-child(1) h3");
+        const articleOverskrift2 = document.querySelector("article:nth-child(2) h3");
+
+        articleOverskrift1.innerHTML = "Her er et <b>billede<b> af noget tilfældigt";
+        articleOverskrift22.textContent = "Her er et billede af noget tilfældigt";
+
+
+        //        ---------------udskift billede----------------------
+
+        //        const billede1 = document.querySelector("article:nth-child(1) img");
+        //        const billede2 = document.querySelector("article:nth-child(2) img");
+        //
+        //        billede1. = ;
+        //        billede2. = ;
+
+        const billede1 = document.querySelector("article:nth-child(1) img");
+        console.log(billede1);
+
+        billede1.src = "billeder/placeimg_400_300_people.jpg";
+        billede1.alt = "mennesker";
+
+        const billede2 = document.querySelector("article:nth-child(1) img");
+        console.log(billede2);
+
+        billede1.src = "billeder/placeimg_400_300_people.jpg";
+
+    </script>
+</body>
+
+</html>

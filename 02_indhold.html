@@ -82,6 +82,19 @@
         tekst.textContent
         console.log(tekst.textContent);
 
+
+        const article1 = document.querySelector("article:nth-child(1) p");
+        const article2 = document.querySelector("article:nth-child(2) p");
+
+        article1.innerHTML = "Her er et <b>billede<b> af noget tilfældigt";
+        article2.textContent = "Her er et billede af noget tilfældigt";
+
+        const articleOverskrift1 = document.querySelector("article:nth-child(1) h3");
+        const articleOverskrift2 = document.querySelector("article:nth-child(2) h3");
+
+        articleOverskrift1.innerHTML = "Her er et <b>billede<b> af noget tilfældigt";
+        articleOverskrift22.textContent = "Her er et billede af noget tilfældigt";
+
     </script>
 </body>
 
